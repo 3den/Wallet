@@ -1,0 +1,48 @@
+<head>
+  <title>wallet</title>
+</head>
+
+<body>
+  {{> userNavbar}}
+  <section class="container">
+    {{> hello}}
+  </section>
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template name="userNavbar">
+  <nav class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav" role="navigation">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="/">
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu"
+              aria-labelledby="dlabel">
+              <li><a>Home $10.00</a></li>
+              <li><a>Car $40.00</a></li>
+              <li><a>Mom -$20.00</a></li>
+              <li><a>Total Balance $30.00</a></li>
+            </ul>
+          </li>
+        </ul>
+        <b class="brand">Total Balance R$100.00</b>
+        <ul class="nav pull-right">
+          <!--li><button class="btn btn-danger"><b
+              class="icon-minus-sign"></b></button></li-->
+          <li>
+            <button class="btn"><b class="icon-plus-sign"></b></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
