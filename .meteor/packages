@@ -11,3 +11,5 @@ bootstrap
 accounts-base
 accounts-ui
 coffeescript
+backbone
+accounts-password

@@ -1,3 +1,14 @@
+class Router extends Backbone.Router
+  routes:
+    '': "index"
+
+  index: ->
+    console.log "i am at the index"
+
+$ ->
+  new Router()
+  Backbone.history.start(pushState: true)
+
 Template.hello.greeting = ->
   return "Welcome to wallet."
 
