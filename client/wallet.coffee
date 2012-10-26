@@ -1,20 +1,16 @@
 class Router extends Backbone.Router
   routes:
-    '': "index"
+    '': "home"
+    ':user': "account"
+    ':user/:account': "account"
 
-  index: ->
+  home: ->
     console.log "i am at the index"
+
+  account: (user, account = "all") ->
+    console.log "user #{user} account #{account}"
 
 $ ->
   new Router()
   Backbone.history.start(pushState: true)
 
-Template.hello.greeting = ->
-  return "Welcome to wallet."
-
-Template.hello.events
-  'click input': ->
-    # template data, if any, is available in 'this'
-    if console?
-      alert "im alive!"
-      console.log("You pressed the button")
