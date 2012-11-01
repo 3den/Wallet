@@ -1,3 +1,6 @@
+Meteor.subscribe("accounts")
+Meteor.subscribe("users")
+
 class Router extends Backbone.Router
   routes:
     '': "home"

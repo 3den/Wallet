@@ -1,4 +1,4 @@
-Accounts = new Meteor.Collection("Accounts")
+Accounts = new Meteor.Collection("accounts")
 
 Accounts.allow
   insert: (userId, account) ->
