@@ -1,4 +1,4 @@
-class AccountCreator
+class WalletCreator
   initialize: (@delegator) ->
 
   valid: (options) ->

@@ -6,7 +6,6 @@
 preserve-inputs
 jquery
 bootstrap
-accounts-base
 accounts-ui
 coffeescript
 backbone

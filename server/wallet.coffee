@@ -1,13 +1,7 @@
-Meteor.publish "accounts", ->
-  return Accounts.find({
-    $or: [
-      {"public": true},
-      {invited: this.userId}, {owner: this.userId}
-    ]
-  })
+Meteor.publish "wallets", ->
+  return Accounts.find
+    userId: @userId
 
 Meteor.publish "users", ->
-  return Meteor.users.find({})
+  return Meteor.users.find()
 
-
-console.log("im alive")
